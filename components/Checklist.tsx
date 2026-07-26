@@ -1,34 +1,25 @@
-const items = [
-  "قرأت الشرح بالكامل",
-  "نفذت جميع الخطوات",
-  "تأكدت أن كل شيء يعمل",
-];
-
 export default function Checklist() {
   return (
-    <section className="mt-10 rounded-xl border bg-white p-6 shadow-sm">
+    <section className="mt-12 rounded-xl border p-6">
 
       <h2 className="mb-4 text-xl font-semibold">
         قائمة التحقق
       </h2>
 
-      <div className="space-y-3">
+      <label className="mb-3 flex items-center gap-3">
+        <input type="checkbox" />
+        قرأت الشرح بالكامل
+      </label>
 
-        {items.map((item) => (
-          <label
-            key={item}
-            className="flex items-center gap-3 cursor-pointer"
-          >
-            <input
-              type="checkbox"
-              className="h-5 w-5"
-            />
+      <label className="mb-3 flex items-center gap-3">
+        <input type="checkbox" />
+        نفذت جميع الخطوات
+      </label>
 
-            <span>{item}</span>
-          </label>
-        ))}
-
-      </div>
+      <label className="flex items-center gap-3">
+        <input type="checkbox" />
+        أصبحت جاهزًا للانتقال للدرس التالي
+      </label>
 
     </section>
   );
