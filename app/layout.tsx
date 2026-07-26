@@ -1,1 +1,21 @@
-g
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "شغلنى",
+  description: "تعلم العمل على الإنترنت خطوة بخطوة",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="ar" dir="rtl">
+      <body>
+        {children}
+      </body>
+    </html>
+  );
+}
