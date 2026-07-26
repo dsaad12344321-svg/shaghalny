@@ -1,52 +1,52 @@
 import Link from "next/link";
 import { clippingLessons } from "@/data/clipping";
 
+export const metadata = {
+  title: "TikTok Clipping",
+};
+
 export default function ClippingPage() {
   return (
-    <main className="mx-auto max-w-4xl px-6 py-10">
+    <main className="mx-auto max-w-5xl px-6 py-12">
+      <header className="mb-10">
+        <h1 className="text-4xl font-bold">
+          TikTok Clipping
+        </h1>
 
-      <h1 className="mb-2 text-4xl font-bold">
-        TikTok Clipping
-      </h1>
+        <p className="mt-3 text-slate-600">
+          اتبع الدروس التالية بالترتيب حتى تصبح جاهزًا للعمل.
+        </p>
+      </header>
 
-      <p className="mb-8 text-gray-600">
-        اتبع الخطوات التالية بالترتيب حتى تصبح جاهزًا للعمل.
-      </p>
-
-      <div className="space-y-4">
-
+      <section className="space-y-5">
         {clippingLessons.map((lesson, index) => (
           <Link
             key={lesson.slug}
             href={`/clipping/${lesson.slug}`}
-            className="block rounded-xl border bg-white p-5 shadow-sm transition hover:shadow-md"
+            className="block rounded-2xl border bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
           >
-            <div className="flex items-center justify-between">
-
+            <div className="flex items-center justify-between gap-4">
               <div>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-slate-500">
                   الخطوة {index + 1}
                 </p>
 
-                <h2 className="mt-1 text-xl font-semibold">
+                <h2 className="mt-1 text-2xl font-semibold">
                   {lesson.title}
                 </h2>
 
-                <p className="mt-2 text-gray-600">
+                <p className="mt-2 text-slate-600">
                   {lesson.description}
                 </p>
               </div>
 
-              <span className="text-2xl">
+              <div className="text-3xl">
                 →
-              </span>
-
+              </div>
             </div>
           </Link>
         ))}
-
-      </div>
-
+      </section>
     </main>
   );
 }
