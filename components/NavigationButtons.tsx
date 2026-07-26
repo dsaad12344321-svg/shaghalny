@@ -1,21 +1,25 @@
 import Link from "next/link";
 
+type Lesson = {
+  slug: string;
+};
+
 type Props = {
-  previous?: string;
-  next?: string;
+  previousLesson: Lesson | null;
+  nextLesson: Lesson | null;
 };
 
 export default function NavigationButtons({
-  previous,
-  next,
+  previousLesson,
+  nextLesson,
 }: Props) {
   return (
-    <section className="mt-10 flex items-center justify-between">
+    <div className="mt-10 flex justify-between">
 
-      {previous ? (
+      {previousLesson ? (
         <Link
-          href={previous}
-          className="rounded-lg border px-5 py-3 transition hover:bg-gray-100"
+          href={`/clipping/${previousLesson.slug}`}
+          className="rounded-lg border px-5 py-3"
         >
           ← السابق
         </Link>
@@ -23,22 +27,22 @@ export default function NavigationButtons({
         <div />
       )}
 
-      {next ? (
+      {nextLesson ? (
         <Link
-          href={next}
-          className="rounded-lg bg-green-600 px-5 py-3 text-white transition hover:bg-green-700"
+          href={`/clipping/${nextLesson.slug}`}
+          className="rounded-lg bg-green-600 px-5 py-3 text-white"
         >
           التالي →
         </Link>
       ) : (
         <Link
           href="/clipping"
-          className="rounded-lg bg-blue-600 px-5 py-3 text-white transition hover:bg-blue-700"
+          className="rounded-lg bg-blue-600 px-5 py-3 text-white"
         >
           إنهاء المسار 🎉
         </Link>
       )}
 
-    </section>
+    </div>
   );
 }
