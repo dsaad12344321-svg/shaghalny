@@ -11,6 +11,8 @@ export default function TutorialStep({
     <section className="space-y-4">
       <img
         src={image}
+        width={400}
+        height={400}
         alt={text}
         className="w-full rounded-xl border"
       />
