@@ -17,7 +17,7 @@ export const clippingLessons: Lesson[] = [
     description: "تعلم كيفية إنشاء قناة TikTok خطوة بخطوة.",
     steps: [
       {
-        image: "../cr1.jpg",
+        image: "/cr1.jpg",
         text: "افتح تطبيق TikTok واضغط على تسجيل حساب جديد.",
       },
       {
