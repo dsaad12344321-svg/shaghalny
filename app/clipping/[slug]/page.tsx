@@ -65,5 +65,5 @@ export default async function LessonPage({ params }: Props) {
         nextLesson={nextLesson}
       />
     </main>
-  );
+  )
 }
