@@ -18,14 +18,14 @@ export const clippingLessons: Lesson[] = [
     steps: [
       {
         image: "/cr1.jpg",
-        text: "افتح تطبيق TikTok واضغط على تسجيل حساب جديد.",
+        text: "افتح تطبيق TikTok واضغط على تسجيل دخول.",
       },
       {
-        image: "/tutorials/create-account/02.webp",
+        image: "/cr2.jpg",
         text: "اختر التسجيل باستخدام البريد الإلكتروني أو رقم الهاتف.",
       },
       {
-        image: "/tutorials/create-account/03.webp",
+        image: "/cr3.jpg",
         text: "أدخل بياناتك ثم أكمل إنشاء الحساب.",
       },
     ],
