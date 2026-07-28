@@ -99,6 +99,7 @@ export const clippingLessons: Lesson[] = [
       image: "/re6.jpg",
       text: `في السيرة الذاتية انسخ النص التالي:
 
+
 Generate income without followers and without showing your face
 
 https://contentrewards.com/r/erian`,
