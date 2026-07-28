@@ -109,7 +109,7 @@ https://contentrewards.com/r/erian`,
   {
     slug: "monetization",
     title: "ربط القناة بمنصة الأرباح",
-    description: "اربط القناة بمنصة الأرباح الخاصة بك.",
+    description: "قم بالتواصل مع الادمن واربط القناة بمنصة الأرباح الخاصة بك.",
     steps: [],
   },
 
