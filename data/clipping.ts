@@ -114,11 +114,40 @@ https://contentrewards.com/r/erian`,
   },
 
   {
-    slug: "tiktok-studio",
-    title: "تحميل TikTok Studio",
-    description: "تحميل وتثبيت TikTok Studio.",
-    steps: [],
-  },
+  slug: "tiktok-studio",
+  title: "تحميل TikTok Studio",
+  description: "قم بتحميل تطبيق TikTok Studio والتقاط لقطات الشاشة المطلوبة لإرسالها إلى الأدمن.",
+  steps: [
+    {
+      image: "/st1.jpg",
+      text: "قم بتحميل تطبيق TikTok Studio من متجر Google Play ثم ثبّته على هاتفك.",
+    },
+    {
+      image: "/st2.jpg",
+      text: "افتح التطبيق وقم بتسجيل الدخول باستخدام نفس حساب TikTok الخاص بك.",
+    },
+    {
+      image: "/st3.jpg",
+      text: "من الشريط السفلي، اضغط على (التحليلات) أو (Analytics).",
+    },
+    {
+      image: "/st4.jpg",
+      text: "في أعلى الصفحة اختر (المشاهدون) أو (Viewers)، ثم التقط لقطة الشاشة الأولى.",
+    },
+    {
+      image: "/st5.jpg",
+      text: "اضغط على (العمر) أو (Age)، ثم التقط لقطة الشاشة الثانية.",
+    },
+    {
+      image: "/st6.jpg",
+      text: "اضغط على (الموقع) أو (Locations)، ثم التقط لقطة الشاشة الثالثة.",
+    },
+    {
+      image: "/st7.jpg",
+      text: "قم بتجميع لقطات الشاشة الثلاث في صورة واحدة، ثم أرسلها إلى الأدمن.",
+    },
+  ],
+},
 
   {
     slug: "first-post",
