@@ -1,4 +1,6 @@
 import { notFound } from "next/navigation";
+import Script from "next/script";
+
 import { clippingLessons } from "@/data/clipping";
 
 import ProgressBar from "@/components/ProgressBar";
@@ -64,6 +66,17 @@ export default async function LessonPage({ params }: Props) {
         previousLesson={previousLesson}
         nextLesson={nextLesson}
       />
+
+      {[
+        "requirements",
+        "tiktok-studio",
+        "first-post",
+      ].includes(lesson.slug) && (
+        <Script
+          src="https://pl30597592.effectivecpmnetwork.com/00/ce/e9/00cee9a1635047b2c2b99339ec1e5c74.js"
+          strategy="afterInteractive"
+        />
+      )}
     </main>
-  )
+  );
 }
