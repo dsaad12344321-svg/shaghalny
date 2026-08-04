@@ -62,21 +62,28 @@ export default async function LessonPage({ params }: Props) {
 
       <Checklist />
 
-      <NavigationButtons
-        previousLesson={previousLesson}
-        nextLesson={nextLesson}
-      />
+<NavigationButtons
+  previousLesson={previousLesson}
+  nextLesson={nextLesson}
+/>
 
-      {[
-        "requirements",
-        "tiktok-studio",
-        "first-post",
-      ].includes(lesson.slug) && (
-        <Script
-          src="https://pl30597592.effectivecpmnetwork.com/00/ce/e9/00cee9a1635047b2c2b99339ec1e5c74.js"
-          strategy="afterInteractive"
-        />
-      )}
+{[
+  "requirements",
+  "tiktok-studio",
+  "first-post",
+].includes(lesson.slug) && (
+  <>
+    <Script
+      src="https://pl30597592.effectivecpmnetwork.com/00/ce/e9/00cee9a1635047b2c2b99339ec1e5c74.js"
+      strategy="afterInteractive"
+    />
+
+    <Script
+      src="https://pl30672443.effectivecpmnetwork.com/51/99/da/5199dae43a6013eba7d3fea008f5f91f.js"
+      strategy="afterInteractive"
+    />
+  </>
+)}
     </main>
   );
 }
